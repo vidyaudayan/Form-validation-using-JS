@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#161a1d;
+    --primary-color:#7289da;
+   
+}
+body{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+form{
+    border:2px solid rgba(255,255,255,0.224);
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    background-color:rgb(37, 165, 165);
+}
+form input{
+    padding: 8px;
+    width:300px;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+}
+h1{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+input[type='submit']{
+    width: 300px;
+    background-color: var(--primary-color);
+    border:none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.account{
+    margin-top: 20px;
+}
+form p{
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+}
+.inputContainer p{
+visibility: hidden;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+.inputContainer.error p{
+    visibility: visible;
+}
+.inputContainer.error input{
+border-color: red;
+}
+.btn{
+    width: 200px;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgb(180, 68, 68);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: brown;
+}
